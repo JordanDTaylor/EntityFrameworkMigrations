@@ -14,5 +14,7 @@ namespace Cintera.DAL
         {
 
         }
+
+        public DbSet<Case> Cases { get; set; }
     }
 }
