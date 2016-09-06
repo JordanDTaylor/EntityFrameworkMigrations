@@ -22,6 +22,12 @@ namespace Cintera.DAL
         {
             modelBuilder.Conventions
                 .Remove<PluralizingTableNameConvention>();
+
+            modelBuilder.Entity<Sighting>()
+                .Property(x => x.Address)
+                .HasMaxLength(256)
+                .IsRequired();
+
             base.OnModelCreating(modelBuilder);
         }
     }
