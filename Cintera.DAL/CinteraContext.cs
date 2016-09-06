@@ -23,6 +23,11 @@ namespace Cintera.DAL
             modelBuilder.Conventions
                 .Remove<PluralizingTableNameConvention>();
 
+            modelBuilder.Entity<Vehicle>()
+                .Property(x => x.VehicleIdentificationNumber)
+                .IsRequired()
+                .HasMaxLength(17);
+
             modelBuilder.Entity<Sighting>()
                 .Property(x => x.Address)
                 .HasMaxLength(256)

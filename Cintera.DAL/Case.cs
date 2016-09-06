@@ -10,7 +10,17 @@ namespace Cintera.DAL
     {
         public int CaseId { get; set; }
 
+        public virtual ICollection<Vehicle> Vehicles { get; set; }
         public virtual ICollection<Sighting> Signtings { get; set; }
+    }
+
+    public class Vehicle
+    {
+        public int VehicleId { get; set; }
+        public int CaseId { get; set; }
+        public virtual Case Case { get; set; }
+        public string VehicleIdentificationNumber { get; set; }
+
     }
 
     public class Sighting

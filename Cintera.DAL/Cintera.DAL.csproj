@@ -63,6 +63,10 @@
     <Compile Include="Migrations\201609060512161_AddedSighting.Designer.cs">
       <DependentUpon>201609060512161_AddedSighting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609060758462_AddVehicle.cs" />
+    <Compile Include="Migrations\201609060758462_AddVehicle.Designer.cs">
+      <DependentUpon>201609060758462_AddVehicle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609060512161_AddedSighting.resx">
       <DependentUpon>201609060512161_AddedSighting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609060758462_AddVehicle.resx">
+      <DependentUpon>201609060758462_AddVehicle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
